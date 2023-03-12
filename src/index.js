@@ -17,7 +17,11 @@ let handlerFunction = () => {
 
 let displayAnswers = () => {
   let mercury = document.querySelector("#mercury");
-  mercury.innerText = "Your age would be " + age.mercury();
+  if (age.ageDelta > age.age) {
+    mercury.innerText = "You are " + age.mercury() + " years old on Mercury. " + age.ageDeltaFuture + " must pass to be " + age.ageDelta + " on Mercury.";
+  } else if (age.ageDelta < age.age){
+    mercury.innerText = "You are " + age.mercury() + " years old on Mercury. " + age.ageDeltaPast + " years on Mercury have passed since you were " + age.ageDelta;
+  }
 }
 
 window.addEventListener("load", function() {
