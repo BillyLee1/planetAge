@@ -16,6 +16,13 @@ let handlerFunction = () => {
 };
 
 let displayAnswers = () => {
+  let earth = document.querySelector("#earth");
+  if (age.ageDelta > age.age) {
+    earth.innerText = age.ageDelta - age.age + " more years on Earth until you are " + age.ageDelta + " years old.";
+  } else if (age.ageDelta < age.age) {
+    earth.innerText = age.age - age.ageDelta + "  years has passed since you were " + age.ageDelta + " years old on Earth.";
+  }
+
   let mercury = document.querySelector("#mercury");
   if (age.ageDelta > age.age) {
     mercury.innerText = "You are " + age.mercury() + " years old on Mercury. " + age.ageDeltaFuture + " years must pass on Mercury to be " + age.ageDelta + " on Earth.";
