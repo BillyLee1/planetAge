@@ -1,3 +1,5 @@
 body {
   background-color: lightblue;
+  background-image: url(./../../assets/images/space.jpg);
+  color: white;
 }
