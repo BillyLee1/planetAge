@@ -13,4 +13,11 @@ describe('Age', () => {
     expect(ages.altAge).toEqual(5.04);
     expect(ages.mercury()).toEqual(5.04);
   });
+
+  test('It should return the age of person on Venus', () => {
+    let ages = new Age(21, 13.02);
+    expect(ages.age).toEqual(21);
+    expect(ages.altAge).toEqual(13.02);
+    expect(ages.venus()).toEqual(13.02);
+  });
 });
