@@ -1,6 +1,5 @@
-export default function Age(age, altAge, agePast, ageFuture, pBday, fBday) {
+export default function Age(age, agePast, ageFuture, pBday, fBday) {
   this.age = age;
-  this.altAge = altAge;
   this.agePast = agePast;
   this.ageFuture = ageFuture;
   this.pBday = pBday;
@@ -9,24 +8,24 @@ export default function Age(age, altAge, agePast, ageFuture, pBday, fBday) {
 
 Age.prototype.mercury = function() {
   let numb = ((1/.24) * this.age).toFixed(2)
-  this.ageAlt = parseFloat(numb);
-  return this.ageAlt;
+  let ageAlt = parseFloat(numb);
+  return ageAlt;
 }
 
 Age.prototype.venus = function() {
   let numb = ((1/.62) * this.age).toFixed(2)
-  this.ageAlt = parseFloat(numb);
-  return this.ageAlt;
+  let ageAlt = parseFloat(numb);
+  return ageAlt;
 }
 
 Age.prototype.mars = function() {
   let numb = ((1/1.88) * this.age).toFixed(2)
-  this.ageAlt = parseFloat(numb);
-  return this.ageAlt;
+  let ageAlt = parseFloat(numb);
+  return ageAlt;
 }
 
 Age.prototype.jupiter = function() {
   let numb = ((1/11.86) * this.age).toFixed(2)
-  this.ageAlt = parseFloat(numb);
-  return this.ageAlt;
+  let ageAlt = parseFloat(numb);
+  return ageAlt;
 }
