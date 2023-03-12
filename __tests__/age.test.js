@@ -32,24 +32,14 @@ describe('Age', () => {
   });
 
   test('It should return future age and past age', () => {
-    let ages = new Age(56, 10, 12);
-    expect(ages.agePast).toEqual(10);
-    expect(ages.ageFuture).toEqual(12);
+    let ages = new Age(56, 63, 29.16);
+    expect(ages.ageDeltaPast).toEqual(29.16);
   });
 
-  test('It should return future age for Mercury', () => {
-    let ages = new Age(56, 10, 12);
-    ages.age = ages.ageFuture;
-    ages.fBday = ages.mercury();
-    expect(ages.mercury()).toEqual(50);
+  test('It should return future age and past age', () => {
+    let ages = new Age(63, 56, 29.16);
+    expect(ages.ageDeltaFuture).toEqual(29.16);
   });
 
-  test('It should return how many years it has been since last birthday', () => {
-    let ages = new Age(56, 10, 12);
-    ages.age = ages.ageFuture;
-    ages.fBday = ages.mercury();
-    ages.age = ages.agePast;
-    ages.pBday = ages.mercury();
-    expect(ages.mercury()).toEqual(50);
-  });
+
 });
