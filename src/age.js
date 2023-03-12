@@ -1,6 +1,8 @@
-export default function Age(age, altAge) {
+export default function Age(age, altAge, pBday, fBday) {
   this.age = age;
   this.altAge = altAge;
+  this.pBday = pBday;
+  this.fBday = fBday;
 }
 
 Age.prototype.mercury = function() {
