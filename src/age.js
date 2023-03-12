@@ -1,9 +1,10 @@
-export default function Age(age, agePast, ageFuture, pBday, fBday) {
+export default function Age(age, agePast, ageFuture, pBday, fBday, ageDelta) {
   this.age = age;
   this.agePast = agePast;
   this.ageFuture = ageFuture;
   this.pBday = pBday;
   this.fBday = fBday;
+  this.ageDelta = ageDelta;
 }
 
 Age.prototype.mercury = function() {

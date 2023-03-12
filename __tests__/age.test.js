@@ -43,4 +43,13 @@ describe('Age', () => {
     ages.fBday = ages.mercury();
     expect(ages.mercury()).toEqual(50);
   });
+
+  test('It should return how many years it has been since last birthday', () => {
+    let ages = new Age(56, 10, 12);
+    ages.age = ages.ageFuture;
+    ages.fBday = ages.mercury();
+    ages.age = ages.agePast;
+    ages.pBday = ages.mercury();
+    expect(ages.mercury()).toEqual(50);
+  });
 });
