@@ -32,13 +32,14 @@ describe('Age', () => {
   });
 
   test('It should return future age and past age', () => {
-    let ages = new Age(56, 63, 29.16);
-    expect(ages.ageDeltaPast).toEqual(29.16);
+    let ages = new Age(56, 63, 29.17, 29.17);
+    expect(ages.ageDeltaFuture).toEqual(29.17);
   });
 
   test('It should return future age and past age', () => {
-    let ages = new Age(63, 56, 29.16);
-    expect(ages.ageDeltaFuture).toEqual(29.16);
+    let ages = new Age(63, 56, 29.17, 29.17);
+    ages.mercury();
+    expect(ages.ageDeltaPast).toEqual(29.17);
   });
 
 
