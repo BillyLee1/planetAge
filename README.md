@@ -10,11 +10,11 @@
 * _CSS_
 * _JavaScript_
 * _Webpack_
-*_Jest_
-*_Babel_
-*_ESLint_
-*_Bootstrap_
-*_VSCode_
+* _Jest_
+* _Babel_
+* _ESLint_
+* _Bootstrap_
+* _VSCode_
 
 ## Description
 _This is a simple website to tell you your age on Mars, Jupiter, Venus, and Mercury. The program will also tell you how long it has passed since a previous age or how long it will be for a future age._
@@ -25,9 +25,9 @@ _This is a simple website to tell you your age on Mars, Jupiter, Venus, and Merc
 * _Press the green code button and copy and the HTTPS link that ends with .git_
 * _Open up your gitbash and change the directory to where you want to clone this repository._
 * _in gitbash, type "git clone" and then paste the link you just copied._
-*_Open the project folder in VS Code by typing "code ." into gitbash_
-*_Type "npm install" into gitbash to install all node modules_
-*_Type "npm run start" into git bash to open up the live server_
+* _Open the project folder in VS Code by typing "code ." into gitbash_
+* _Type "npm install" into gitbash to install all node modules_
+* _Type "npm run start" into git bash to open up the live server_
 
 
 ## Known Bugs
