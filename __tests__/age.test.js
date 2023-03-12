@@ -8,30 +8,30 @@ describe('Age', () => {
   });
 
   test('It should return the age of person on Mercury', () => {
-    let ages = new Age(21, 5.04);
-    expect(ages.age).toEqual(21);
-    expect(ages.altAge).toEqual(5.04);
-    expect(ages.mercury()).toEqual(5.04);
+    let ages = new Age(56, 233.33);
+    expect(ages.age).toEqual(56);
+    expect(ages.altAge).toEqual(233.33);
+    expect(ages.mercury()).toEqual(233.33);
   });
 
   test('It should return the age of person on Venus', () => {
-    let ages = new Age(21, 13.02);
-    expect(ages.age).toEqual(21);
-    expect(ages.altAge).toEqual(13.02);
-    expect(ages.venus()).toEqual(13.02);
+    let ages = new Age(56, 90.32);
+    expect(ages.age).toEqual(56);
+    expect(ages.altAge).toEqual(90.32);
+    expect(ages.venus()).toEqual(90.32);
   });
 
   test('It should return the age of person on Mars', () => {
-    let ages = new Age(21, 39.48);
-    expect(ages.age).toEqual(21);
-    expect(ages.altAge).toEqual(39.48);
-    expect(ages.mars()).toEqual(39.48);
+    let ages = new Age(56, 29.79);
+    expect(ages.age).toEqual(56);
+    expect(ages.altAge).toEqual(29.79);
+    expect(ages.mars()).toEqual(29.79);
   });
 
   test('It should return the age of person on Jupiter', () => {
-    let ages = new Age(21, 249.06);
-    expect(ages.age).toEqual(21);
-    expect(ages.altAge).toEqual(249.06);
-    expect(ages.jupiter()).toEqual(249.06);
+    let ages = new Age(56, 4.72);
+    expect(ages.age).toEqual(56);
+    expect(ages.altAge).toEqual(4.72);
+    expect(ages.jupiter()).toEqual(4.72);
   });
 });

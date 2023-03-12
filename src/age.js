@@ -4,21 +4,25 @@ export default function Age(age, altAge) {
 }
 
 Age.prototype.mercury = function() {
-  this.ageAlt = .24 * this.age;
+  let numb = ((1/.24) * this.age).toFixed(2)
+  this.ageAlt = parseFloat(numb);
   return this.ageAlt;
 }
 
 Age.prototype.venus = function() {
-  this.ageAlt = .62 * this.age;
+  let numb = ((1/.62) * this.age).toFixed(2)
+  this.ageAlt = parseFloat(numb);
   return this.ageAlt;
 }
 
 Age.prototype.mars = function() {
-  this.ageAlt = 1.88 * this.age;
+  let numb = ((1/1.88) * this.age).toFixed(2)
+  this.ageAlt = parseFloat(numb);
   return this.ageAlt;
 }
 
 Age.prototype.jupiter = function() {
-  this.ageAlt = 11.86 * this.age;
+  let numb = ((1/11.86) * this.age).toFixed(2)
+  this.ageAlt = parseFloat(numb);
   return this.ageAlt;
 }
