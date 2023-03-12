@@ -7,8 +7,10 @@ let age = new Age();
 
 let handlerFunction = (event) => {
   event.preventDefault();
+
   let orgAge = document.querySelector("#orgAge").value;
   let ageDelta = document.querySelector("#ageDelta").value;
+  
   age.age = parseInt(orgAge);
   age.ageDelta = parseInt(ageDelta);
 
