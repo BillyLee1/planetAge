@@ -1,6 +1,6 @@
 # Planet Age
 
-#### Tells you your age while on Mars, Jupiter, Venus, and Mercury
+#### Tells you your age while on Earth, Mars, Jupiter, Venus, and Mercury
 
 #### By Billy Lee
 
@@ -17,7 +17,7 @@
 * _VSCode_
 
 ## Description
-_This is a simple website to tell you your age on Mars, Jupiter, Venus, and Mercury. The program will also tell you how long it has passed since a previous age or how long it will be for a future age._
+_This is a simple website to tell you your age on Earth, Mars, Jupiter, Venus, and Mercury. The program will also tell you how long it has passed since a previous age or how long it will be for a future age._
 
 ## Setup/Installation Requirements
 
