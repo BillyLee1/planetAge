@@ -17,3 +17,8 @@ Age.prototype.mars = function() {
   this.ageAlt = 1.88 * this.age;
   return this.ageAlt;
 }
+
+Age.prototype.jupiter = function() {
+  this.ageAlt = 11.86 * this.age;
+  return this.ageAlt;
+}

@@ -27,4 +27,11 @@ describe('Age', () => {
     expect(ages.altAge).toEqual(39.48);
     expect(ages.mars()).toEqual(39.48);
   });
+
+  test('It should return the age of person on Jupiter', () => {
+    let ages = new Age(21, 249.06);
+    expect(ages.age).toEqual(21);
+    expect(ages.altAge).toEqual(249.06);
+    expect(ages.jupiter()).toEqual(249.06);
+  });
 });
