@@ -34,4 +34,10 @@ describe('Age', () => {
     expect(ages.altAge).toEqual(4.72);
     expect(ages.jupiter()).toEqual(4.72);
   });
+
+  test('It should return future age and past age', () => {
+    let ages = new Age(56, 4, 10, 12);
+    expect(ages.agePast).toEqual(10);
+    expect(ages.ageFuture).toEqual(12);
+  });
 });

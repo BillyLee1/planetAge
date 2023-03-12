@@ -1,6 +1,8 @@
-export default function Age(age, altAge, pBday, fBday) {
+export default function Age(age, altAge, agePast, ageFuture, pBday, fBday) {
   this.age = age;
   this.altAge = altAge;
+  this.agePast = agePast;
+  this.ageFuture = ageFuture;
   this.pBday = pBday;
   this.fBday = fBday;
 }
