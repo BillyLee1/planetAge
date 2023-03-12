@@ -7,9 +7,10 @@ describe('Age', () => {
     expect(ages.age).toEqual(21);
   });
 
-  test('It should return the age of person on Mercury'), () => {
-    let ages = new Age(21);
+  test('It should return the age of person on Mercury', () => {
+    let ages = new Age(21, 5.04);
     expect(ages.age).toEqual(21);
     expect(ages.altAge).toEqual(5.04);
-  }
+    expect(ages.mercury()).toEqual(5.04);
+  });
 });

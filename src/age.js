@@ -3,7 +3,7 @@ export default function Age(age, altAge) {
   this.altAge = altAge;
 }
 
-Age.prototype.mercury = () => {
+Age.prototype.mercury = function() {
   this.ageAlt = .24 * this.age;
-  return ageAlt;
+  return this.ageAlt;
 }
