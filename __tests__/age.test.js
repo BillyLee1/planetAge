@@ -20,4 +20,11 @@ describe('Age', () => {
     expect(ages.altAge).toEqual(13.02);
     expect(ages.venus()).toEqual(13.02);
   });
+
+  test('It should return the age of person on Mars', () => {
+    let ages = new Age(21, 39.48);
+    expect(ages.age).toEqual(21);
+    expect(ages.altAge).toEqual(39.48);
+    expect(ages.mars()).toEqual(39.48);
+  });
 });
